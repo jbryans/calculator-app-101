@@ -1,5 +1,62 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  display: grid;
+  grid-template-areas: 
+    "num1 add -"
+    "num2 sub -"
+    "- mul -"
+    "- div equal"
+    "- mod clear"
+  ;
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+   */
+ 
+}
+.calculator{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  
+  
+  
+}
+.num1{
+  grid-area: num1;
+
+}
+.num2{
+  grid-area: num2;
+
+}
+.add{
+  grid-area: add;
+
+}
+.sub{
+  grid-area: sub;
+}
+.multiply{
+  grid-area: mul;
+
+}
+.divide{
+  grid-area: div;
+
+}
+.module{
+  grid-area: mod;
+
+}
+.equals{
+  background-color: greenyellow;
+  width: 20%;
+  grid-area: ;
+}
+
+.clear{
+  background-color: yellow;
+  width: 20%;
+  grid-area: ;
 }
